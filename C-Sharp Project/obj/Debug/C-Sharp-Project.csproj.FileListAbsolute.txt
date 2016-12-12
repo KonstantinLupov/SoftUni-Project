@@ -243,6 +243,6 @@ C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Proj
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.csprojResolveAssemblyReference.cache
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.dll
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.csprojResolveAssemblyReference.cache

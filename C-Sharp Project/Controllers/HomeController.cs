@@ -8,6 +8,7 @@ namespace C_Sharp_Project.Controllers
 {
     public class HomeController : Controller
     {
+        
         public ActionResult Index()
         {
             return View();
@@ -26,5 +27,6 @@ namespace C_Sharp_Project.Controllers
 
             return View();
         }
+       
     }
 }
