@@ -218,6 +218,13 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\background.png" />
+    <Content Include="images\andycole.jpg" />
+    <Content Include="images\beckham.jpg" />
+    <Content Include="images\berbatov.jpg" />
+    <Content Include="images\charlton.jpg" />
+    <Content Include="images\ibrahimovic.jpg" />
+    <Content Include="images\mkhitaryan.jpg" />
+    <Content Include="images\ronaldo.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -283,7 +290,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
