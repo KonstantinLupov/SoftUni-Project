@@ -293,15 +293,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Player\AndyCole.cshtml" />
-    <Content Include="Views\Player\Charlton.cshtml" />
-    <Content Include="Views\Player\Ronaldo.cshtml" />
-    <Content Include="Views\Player\Beckham.cshtml" />
-    <Content Include="Views\Player\Berbatov.cshtml" />
-    <Content Include="Views\Player\Ibrahimovic.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Player\List.cshtml" />
     <Content Include="Views\Home\LearnMore.cshtml" />
+    <Content Include="Views\Player\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

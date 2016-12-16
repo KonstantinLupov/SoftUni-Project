@@ -23,9 +23,22 @@ namespace C_Sharp_Project.Controllers
                 var players = database.Players
                     .Include(a => a.Author)
                     .ToList();
+
                 return View(players);
             }
             
+        }
+
+        public ActionResult Details(int ?id)
+        {
+            using (var database = new ApplicationDbContext())
+            {
+                var players = database.Players
+                    .Where(p => p.Id == id)
+                    .ToList().First();
+
+                return View(players);
+            }
         }
        
         
