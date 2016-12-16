@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manchester United - @ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootstrap/css/style")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+    
 
 </head>
 <body>
@@ -24,6 +26,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Players","List","Player")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

@@ -246,3 +246,17 @@ C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Proj
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.dll
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.pdb
 C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\obj\Debug\C-Sharp-Project.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\csc.exe.config
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\csc.rsp
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\csi.exe
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\csi.rsp
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\System.AppContext.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\vbc.exe.config
+C:\Users\USER\Documents\Visual Studio 2015\Projects\C-Sharp Project\SoftUni-Project-master\C-Sharp Project\bin\roslyn\vbc.rsp

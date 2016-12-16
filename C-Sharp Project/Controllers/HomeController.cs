@@ -27,6 +27,12 @@ namespace C_Sharp_Project.Controllers
 
             return View();
         }
-       
+        public ActionResult LearnMore()
+        {
+           
+
+            return View();
+        }
+
     }
 }

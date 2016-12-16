@@ -1,13 +1,16 @@
-﻿using System.Web;
+﻿
+using System.Web;
 using System.Web.Optimization;
 
 namespace C_Sharp_Project
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
+
+      // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+           
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -26,6 +29,9 @@ namespace C_Sharp_Project
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+    "~/Content/bootstrap.css",
+    "~/Content/bootstrap-theme.css"));
         }
     }
 }
