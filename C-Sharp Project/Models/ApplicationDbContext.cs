@@ -22,6 +22,6 @@ namespace C_Sharp_Project.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<C_Sharp_Project.Models.ApplicationUser> ApplicationUsers { get; set; }
+        
     }
 }
