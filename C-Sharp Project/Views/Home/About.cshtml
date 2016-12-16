@@ -1,15 +1,29 @@
-﻿<div style="margin-left:65px">
+﻿@using C_Sharp_Project.Models;
+@using C_Sharp_Project.Migrations;
 @{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Learn More";
 }
-<h2>@ViewBag.Title:</h2>
-<h3>The Manchester United Website is a no-profit organisation. @Environment.NewLine
-     It is entirely made for fun! </h3>
 
-<p>Note that any attempts to make profit from this website is going to be taken measures against.</p>
+<div class="jumbotron" , style="background-color: #ff2400">
+    <h2>How does the site work?</h2>
+    <div class="lead">
+        <p>1. You need to register.</p>
+        <p>2. You need to log in.</p>
+        <p>3. You can upload information, or read information.</p>
+        <p>4. If you want to upload information, click on the "Upload" button on the navigation bar</p>
+        <p>5. If you want to read information about you favourite player, click on the "Players" button next to the "Upload" one.</p>
+    </div>
+</div>
 
-    <hr />
-    <footer>
-        <p>&copy; @DateTime.Now.Year - Manchester United Website</p>
-    </footer>
+<div class="row">
+    <div class="col-md-4">
+
+
+        <hr />
+        <footer, style="margin-left:200px">
+            <p>&copy; @DateTime.Now.Year - Manchester United Website</p>
+        </footer,>
+
+    </div>
+
 </div>
