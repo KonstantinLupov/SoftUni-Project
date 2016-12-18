@@ -41,12 +41,15 @@ namespace C_Sharp_Project.Controllers
                 return View(players);
             }
         }
-        public ActionResult Create ()
+
+        [Authorize]
+        public ActionResult Upload ()
         {
             return View();
         }
         [HttpPost]
-        public ActionResult Create(Player player)
+        [Authorize]
+        public ActionResult Upload(Player player)
         {
             if(ModelState.IsValid)
             {
@@ -83,6 +86,7 @@ namespace C_Sharp_Project.Controllers
                     .Include(a => a.Author)
                     .First();
 
+               
                 //Check if player exists
                 if (player == null)
                 {
@@ -120,7 +124,60 @@ namespace C_Sharp_Project.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public ActionResult Edit(int? id)
+        {
+            
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            using (var database = new ApplicationDbContext())
+            {
+                var player = database.Players
+                    .Where(a => a.Id == id)
+                    .First();
+
+               
+
+                if (player == null)
+                {
+                    return HttpNotFound();
+                }
+
+                var model = new PlayerViewModel();
+                model.Id = player.Id;
+                model.Name = player.Name;
+                model.Content = player.Content;
+
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Edit (PlayerViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                using (var database = new ApplicationDbContext())
+                {
+                    var player = database.Players
+                        .FirstOrDefault(a => a.Id == model.Id);
+
+                    player.Name = model.Name;
+                    player.Content = model.Content;
+
+                    database.Entry(player).State = EntityState.Modified;
+                    database.SaveChanges();
+                    
+                }
+                
+            }
+            return RedirectToAction("Index");
+        }
        
+      
         
     }
 }
