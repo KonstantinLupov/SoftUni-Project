@@ -221,13 +221,6 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\background.png" />
-    <Content Include="images\andycole.jpg" />
-    <Content Include="images\beckham.jpg" />
-    <Content Include="images\berbatov.jpg" />
-    <Content Include="images\charlton.jpg" />
-    <Content Include="images\ibrahimovic.jpg" />
-    <Content Include="images\mkhitaryan.jpg" />
-    <Content Include="images\ronaldo.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -292,7 +285,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Player\AndyCole.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Player\List.cshtml" />
