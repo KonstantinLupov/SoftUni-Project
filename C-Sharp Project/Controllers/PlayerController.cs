@@ -40,6 +40,32 @@ namespace C_Sharp_Project.Controllers
                 return View(players);
             }
         }
+        public ActionResult Create ()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Player player)
+        {
+            if(ModelState.IsValid)
+            {
+                using (var database = new ApplicationDbContext())
+                {
+                    var authorId = database.Users
+                        .Where(u => u.UserName == this.User.Identity.Name)
+                        .First()
+                        .Id;
+
+                    player.AuthorId = authorId;
+
+                    database.Players.Add(player);
+                    database.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+            }
+            return View(player);
+        }
        
         
     }
