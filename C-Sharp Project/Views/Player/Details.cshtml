@@ -23,5 +23,9 @@
     width: 470px;
     ">
     </div>
-
 </div>
+<footer class="pull-right" style="margin-bottom:250px">
+    @Html.ActionLink("Edit", "Edit", "Player", new { @id = Model.Id }, new { @class = "btn btn-success btn-s" })
+    @Html.ActionLink("Delete", "Delete", "Player", new { @id = Model.Id }, new { @class = "btn btn-danger btn-s" })
+    @Html.ActionLink("Back", "Index", "Player", null, new { @class = "btn btn-default btn-s" })
+</footer>

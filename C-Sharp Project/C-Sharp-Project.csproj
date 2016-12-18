@@ -291,6 +291,7 @@
     <Content Include="Views\Home\LearnMore.cshtml" />
     <Content Include="Views\Player\Details.cshtml" />
     <Content Include="Views\Player\Create.cshtml" />
+    <Content Include="Views\Player\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -323,7 +324,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50152</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50650/</IISUrl>
+          <IISUrl>http://localhost:50601/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

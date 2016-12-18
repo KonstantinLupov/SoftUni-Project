@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -65,6 +66,59 @@ namespace C_Sharp_Project.Controllers
                 }
             }
             return View(player);
+        }
+
+        public ActionResult Delete (int? id)
+        {
+            if(id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            using (var database = new ApplicationDbContext())
+            {
+                // Get player from database
+                var player = database.Players
+                    .Where(a => a.Id == id)
+                    .Include(a => a.Author)
+                    .First();
+
+                //Check if player exists
+                if (player == null)
+                {
+                    return HttpNotFound();
+                }
+                //Pass player to view
+                return View(player);
+            }
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed (int? id)
+        {
+            if(id==null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            using (var database = new ApplicationDbContext())
+            {
+                var player = database.Players
+                    .Where(a => a.Id == id)
+                    .Include(a => a.Author)
+                    .First();
+
+                if (player == null)
+                {
+                    return HttpNotFound();
+                }
+
+                database.Players.Remove(player);
+                database.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
         }
        
         
