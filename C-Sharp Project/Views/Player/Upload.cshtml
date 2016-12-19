@@ -6,7 +6,7 @@
 <div class="container">
     <div class="well" style="background-color: #ff2400 ; border-color: #ff2400">
         <h2>Upload a Player</h2>
-        @using (Html.BeginForm("Create", "Player", FormMethod.Post, new { @class = "form-horizontal" }))
+        @using (Html.BeginForm("Upload", "Player", FormMethod.Post, new { @class = "form-horizontal" }))
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary("", new { @class = "text-danger" })

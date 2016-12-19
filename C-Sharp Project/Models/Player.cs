@@ -33,6 +33,10 @@ namespace C_Sharp_Project.Models
 
         public virtual ApplicationUser Author { get; set; }
 
+        public bool isAuthor(string name)
+        {
+            return this.Author.UserName.Equals(name);
+        }
         
     }
 }

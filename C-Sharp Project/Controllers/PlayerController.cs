@@ -36,6 +36,7 @@ namespace C_Sharp_Project.Controllers
             {
                 var players = database.Players
                     .Where(p => p.Id == id)
+                    .Include(a => a.Author)
                     .ToList().First();
 
                 return View(players);
@@ -86,7 +87,11 @@ namespace C_Sharp_Project.Controllers
                     .Include(a => a.Author)
                     .First();
 
-               
+               if(! IsUserAuthorizedToDeleteOrEdit(player))
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+                }
+
                 //Check if player exists
                 if (player == null)
                 {
@@ -139,7 +144,11 @@ namespace C_Sharp_Project.Controllers
                     .Where(a => a.Id == id)
                     .First();
 
-               
+
+                if (!IsUserAuthorizedToDeleteOrEdit(player))
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.Forbidden);
+                }
 
                 if (player == null)
                 {
@@ -177,6 +186,13 @@ namespace C_Sharp_Project.Controllers
             return RedirectToAction("Index");
         }
        
+        private bool IsUserAuthorizedToDeleteOrEdit(Player player)
+        {
+            bool isAdmin = this.User.IsInRole("Admin");
+            bool isAuthor = player.isAuthor(this.User.Identity.Name);
+
+            return isAdmin || isAuthor;
+        }
       
         
     }
