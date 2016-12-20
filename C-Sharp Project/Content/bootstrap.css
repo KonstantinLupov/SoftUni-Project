@@ -1607,7 +1607,6 @@ a.text-warning:hover, a.text-warning:focus {
 
 .text-danger {
     color: #ffffff;
-    
 }
 
 a.text-danger:hover, a.text-danger:focus {
@@ -2740,13 +2739,11 @@ th {
         line-height: 1.42857143;
         vertical-align: top;
         border-top: 1px solid #dddddd;
-        border-color: #ff2400;
     }
 
     .table > thead > tr > th {
         vertical-align: bottom;
         border-bottom: 2px solid #dddddd;
-        border-color: #ff2400;
     }
 
     .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
@@ -2778,11 +2775,11 @@ th {
     }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: black;
+    background-color: #f9f9f9;
 }
 
 .table-hover > tbody > tr:hover {
-    background-color: #ff2400;
+    background-color: #f5f5f5;
 }
 
 table col[class*="col-"] {
@@ -7254,7 +7251,6 @@ body {
 }
 
 .text-danger, .text-danger:hover {
-    margin-left:65px;
     color: white;
 }
 
