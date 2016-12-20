@@ -1,0 +1,43 @@
+﻿@model List<C_Sharp_Project.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<div class="container" style="background-color: #ff2400">
+    <div class="well" style="background-color: #ff2400; border-color: #ff2400">
+        <h2>Users</h2>
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    if (ViewBag.Admins.Contains(user.UserName))
+                    {
+                        @:<tr class="info">
+                    }
+                    else
+                    {
+                        @:<tr>
+                    }
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Email</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "User", new { @id = user.Id }, null)
+                            @Html.ActionLink("Delete", "Delete", "User", new { @id = user.Id }, null)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
