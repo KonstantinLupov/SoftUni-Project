@@ -154,7 +154,18 @@ namespace C_Sharp_Project.Controllers
                 var user = new ApplicationUser { UserName = model.Email, FullName = model.FullName, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
-                var addRoleResult = UserManager.AddToRole(user.Id, "User");
+               try
+                {
+                    var addRoleResult = UserManager.AddToRole(user.Id, "User");
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "The same email exists.");
+                    return View(model);
+                }
+                    
+
+                    
 
                 if (result.Succeeded)
                 {
